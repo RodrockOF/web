@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+    <link rel="shortcut icon" href="../IMAGENES/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-3">
+        <h1>NETORANGE</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar colornav" aria-label="Light offcanvas navbar">
+        <div class="container-fluid">
+            <img src="../IMAGENES/logo.png">
+            <a class="navbar-brand text-white">⸻⸻ Functions ⸻⸻</a>
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarLight" aria-controls="offcanvasNavbarLight" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarLight" aria-labelledby="offcanvasNavbarLightLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLightLabel"><B>MANUAL</B></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index-en.html">Home</a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="functions.html">Functions</a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="userTypesDropdown">
+                                User Types
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="users.html#Admin">Administrator User</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="users.html#Estand">Standard User</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="users.html#Grup">Group User</a></li>
+                            </ul>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="interface.html">Interface</a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <br>
+                        <br>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle naranjita" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><B>Language</B></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="funciones.html" id="interfaz4"><img src="../IMAGENES/espana.png" alt=""> Español</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="functions.html" id="interfaz4"><img src="../IMAGENES/reino-unido.png" alt=""> English</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="main-container">
+         <section class="admin mb-5">
+            <h2 id="login">Log in</h2>
+            <p>
+                The program starts with a Log in screen, it will ask for an user and a password; once filled in, pressing Log in will check the credentials, the exit button closes the program.
+            </p>
+            <p>
+                If it is correct, the window on the left will appear, if it is incorrect, the window on the right will appear.             
+            </p>
+            <p>
+                The following is the menu, depending on the privileges of the user, we will see different options, the
+                admin will have user management and standard users will not; the logs button shows a log screen.
+            </p>
+        </section>
+        
+        <section class="admin mb-5">
+            <h2 id="ftpMenu">FTP Server</h2>
+            <p>
+                It will take us to the ftp window. Depending on the type of user, different buttons will appear.            
+            </p>
+           
+            <div>
+                <h3 class="section-title" id="gestionArchivos">File Management</h3>
+                <div class="row row-cols-1 row-cols-md-4 g-4 mb-3">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Uploap File</b></h5>
+                                <p>
+                                    You will see a drop-down menu in which you can choose the directory you want to upload it to, and the select file button will pop up a window that will allow you to choose the file to upload.                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Download Files</b></h5>
+                                <p>
+                                    A drop-down menu will appear to select the file from the server. When you click on the button, it will be downloaded.                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Delete Files</b></h5>
+                                <p>
+                                    The function is the same as above, but instead of downloading, it deletes the selected file.                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Rename files</b></h5>
+                                <p>
+                                    You have a dropdown that selects the file from the server, we put the name of the file and when you
+                                    and when you click on the button you rename the file.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gestion Directorio -->
+            <div>
+                <h3 class="section-title" id="gestionDirectorio">Directory Management</h3>
+                <div class="row row-cols-1 row-cols-md-3 g-4 mb-3">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Create Directory</b></h5>
+                                <p>
+                                    You will get a drop-down where you select the location and a text box for the name of the folder to create.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Delete Directory</b></h5>
+                                <p>
+                                    Similar to above, but you select the folder to delete from a drop-down menu.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Acces Management</b></h5>
+                                <p>
+                                    Select the folder from the drop-down menu. When you click on the button it tells you if you have permissions.                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            <h3 class="section-title">Storage (ADMIN)</h3>
+            <p>
+                In the drop-down menu you see the folders, in the text box you select the space in MB and the button modifies it.
+                And at the bottom you get a table with the used space and its limit.
+            </p>
+            <h3 class="section-title" id="gestionPermisos">Permission(ADMIN)</h3>
+            <p>
+                In one dropdown you put the user/group and in the other the folder you want to give permissions to.            </p>
+            </div>
+        </section>
+
+        <section class="user mb-5">
+            <h2 id="emailManagement">Email Management</h2>
+            <h3 class="section-title" id="loginGoogle">Login with Google</h3>
+            <p>
+                The Email Management option will take us to the following window in which when we click on login
+                with google will open a google log in in the browser.
+            </p>
+            <p>
+                You select your account, it is not possible with the one of the foundation, it has to be another one and this email 
+                must coincide with the one associated with your user in the database.
+            </p>
+            <p>
+                You will get a warning that google has not verified it so you will have to go to the
+                advanced settings and click on go to appMail.
+            </p>
+            <h3 class="section-title" id="misCorreos">My Email</h3>
+            <p>
+                When you return to the application it will load the mail inbox.
+                next to each mail will appear two buttons in the actions column, one deletes the mail and the other is to change
+                deletes the mail and the other one is to change if it is unread or read to the opposite; the button of
+                Refresh button reloads the mailbox and the log out button closes the mail session, not the
+                application, the session stays saved.
+            </p>
+            <h3 class="section-title" id="detallesEmail">Email Details</h3>
+            <p>
+                Double click on an email and it will open in a new window, there you will see the content of the email and the attachments
+                content of the mail and the attached files in the attachments section, when you click on the button of the
+                button on the file will be downloaded.
+            </p>
+            <h3 class="section-title" id="enviarCorreos">Send Email</h3>
+            <p>
+                Again in the tray if I enter in send mail I will see Fields that are necessary to send the mail.
+                to be able to send the mail ,the field of for is the addressee of the mail, this one has to be in the whitelist
+                the subject and the message and by clicking on the attach file button, the folder explorer will open so that you can send the
+                the explorer of folders will open so that you choose files that these cannot exceed 10mb or individually.
+                10mb together or individually.
+            </p>
+
+        </section>
+
+        <section class="user mb-5">
+            <h2 id="userManagement">User Management</h2>
+            <p>We can only access this if we are administrators.</p>
+            <h3 class="section-title" id="userPermission">User Permissions</h3>
+            <p>
+                It will allow us to change role permissions and add external users to the whitelist.
+                external users to the whitelist. To apply the changes to the roles and the limit message, click on save changes, to add to the whitelist, click on add.
+                to add to the whitelist is by clicking add.
+            </p>
+            <h3 class="section-title" id="userCreator">User Creator</h3>
+            <p>
+                We can see that we can assign a user name, email, password and user type,
+                password and user type (if we choose the group type, an option will appear to choose the group).
+            </p>
+            <h3 class="section-title" id="createGroup">Create Group</h3>
+            <p>
+                Simply insert the name and click create group.
+            </p>
+
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-5 text-center text-body-secondary colorfooter">
+        <div>
+            <p class="text-white">Made with <a href="https://getbootstrap.com/" class="link-body-emphasis">Bootstrap</a></p>
+            <p class="mb-0 text-white">
+                <a href="#" class="link-body-emphasis">Back to the top</a>
+            </p>
+            <p class="mt-3">© 2024 GRUPO E</p>
+        </div>
+    </footer>
+<script src="texto.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
