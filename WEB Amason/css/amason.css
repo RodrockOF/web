@@ -1,0 +1,15 @@
+body{
+    background-color: #43A0D7;
+    font-family: sans-serif;
+}
+.navbar {
+    background-color: #1F385A;
+}
+.navbar a{
+ 
+    color: #FF8000;
+}
+
+#logo{
+    width: 4em;
+}
