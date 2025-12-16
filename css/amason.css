@@ -1,0 +1,47 @@
+body{
+    background-image: url('../img/fondoWeb.png');
+    font-family: sans-serif;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 32px;
+  background: #1f385a;
+  border-radius: 999px;
+  margin: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.nav-link{
+    color: rgb(255, 255, 255);
+}
+#logo{
+    width: 4em;
+}
+h3{
+    color: #FF8000;
+    margin-left: 10px;
+    margin-right: 10px
+}
+header{
+    background-color: #2A6E9E;
+}
+h1{
+    color:#F5F7FA;
+}
+.dropdown-menu{
+    background-color: #1f385a;
+    border-color: #FF8000;
+    
+}
+.dropdown button{
+    border-color: #FF8000;
+    color: white;
+}
+
+.navbar-toggler:hover {
+    background-color: #FF8000;
+}
+.dropdown button:hover, .dropdown button:focus, .dropdownbutton:active{
+    background-color: #FF8000
+}
